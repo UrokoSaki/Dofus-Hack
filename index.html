@@ -201,54 +201,53 @@
 
     <footer>Use at your own risk.</footer>
 
-    <script>
-        function startSurvey() {
-            var username = document.getElementById('username').value;
-            var currency = document.getElementById('currency').value;
-            var amount = document.getElementById('amount').value;
-            if (username === '' || amount === '' || amount > 9999999) {
-                alert('Please enter your in-game name and a valid amount');
-                return;
-            }
-            var loader = document.getElementById('loader');
-            var progressBar = document.getElementById('progress-bar');
-            var progress = document.getElementById('progress');
-            loader.style.display = 'block';
-            progressBar.style.display = 'block';
-            var progressValue = 0;
-            var progressInterval = setInterval(function() {
-                progressValue += 10;
-                progress.value = progressValue;
-                if (progressValue >= 90) {
-                    clearInterval(progressInterval);
-                    loader.style.display = 'none';
-                    progressBar.style.display = 'none';
-                    alert('To complete the process, please complete the survey.');
-                    var win = window.open("https://www.lnksforyou.com/unlock/27628", "_blank");
-                    if (!win) {
-                        alert('Please allow popups for this website');
-                    }
-                    var surveyFrame = document.getElementById('surveyFrame');
-                    surveyFrame.src = "https://www.lnksforyou.com/unlock/27628";
-                    surveyFrame.classList.remove("hidden");
+     <script>
+    function startSurvey() {
+        var username = document.getElementById('username').value;
+        var currency = document.getElementById('currency').value;
+        var amount = document.getElementById('amount').value;
+        if (username === '' || amount === '' || amount > 9999999) {
+            alert('Please enter your in-game name and a valid amount');
+            return;
+        }
+        var loader = document.getElementById('loader');
+        var progressBar = document.getElementById('progress-bar');
+        var progress = document.getElementById('progress');
+        loader.style.display = 'block';
+        progressBar.style.display = 'block';
+        var progressValue = 0;
+        var progressInterval = setInterval(function() {
+            progressValue += 10;
+            progress.value = progressValue;
+            if (progressValue >= 90) {
+                clearInterval(progressInterval);
+                loader.style.display = 'none';
+                progressBar.style.display = 'none';
+                alert('To complete the process, please complete the survey.');
+                var win = window.open("https://www.lnksforyou.com/unlock/27628", "_blank");
+                if (!win) {
+                    alert('Please allow popups for this website');
                 }
-            }, 500);
-        }
-
-        function validateAmount(input) {
-            if (input.value.length > 7) {
-                input.value = input.value.slice(0, 7);
-            }
-        }
-
-        window.addEventListener('message', function(event) {
-            if (event.data === 'surveyCompleted') {
-                alert("Your request has been processed. Your requested amount will be added to your account within 24 hours.");
-                var progress = document.getElementById('progress');
-                progress.value = 100;
                 var surveyFrame = document.getElementById('surveyFrame');
-                surveyFrame.classList.add("hidden");
+                surveyFrame.src = "https://www.lnksforyou.com/unlock/27628";
+                surveyFrame.classList.remove("hidden");
             }
-        });
+        }, 500);
+    }
 
-                   
+    function validateAmount(input) {
+        if (input.value.length > 7) {
+            input.value = input.value.slice(0, 7);
+        }
+    }
+
+    window.addEventListener('message', function(event) {
+        if (event.data === 'surveyCompleted') {
+            alert("Your request has been processed. Your requested amount will be added to your account within 24 hours.");
+            var progress = document.getElementById('progress');
+            progress.value = 100;
+            var surveyFrame = document.getElementById('surveyFrame');
+            surveyFrame.classList.add("hidden");
+        }
+    });
+</script>
