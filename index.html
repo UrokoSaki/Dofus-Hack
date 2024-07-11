@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOFUS Kamas Hack</title>
+    <meta name="description" content="Get free Kamas for DOFUS with our easy-to-use hack tool. Secure and efficient, perfect for all players.">
+    <meta name="keywords" content="DOFUS, kamas hack, game hack, free resources">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourwebsite.com/">
+    <link rel="alternate" href="https://yourwebsite.com/" hreflang="en">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src=""></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '');
+    </script>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('hero-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+        }
+        nav {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            margin-top: 80px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        .input-field {
+            margin: 15px 0;
+        }
+        input, select {
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            margin: 5px 0;
+        }
+        .button {
+            background: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+        .button:hover {
+            background: #218838;
+        }
+        .loader {
+            display: none;
+            border: 8px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 8px solid #3498db;
+            width: 60px;
+            height: 60px;
+            animation: spin 2s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+            width: 30%;
+            text-align: center;
+        }
+        .feature i {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .testimonials {
+            margin: 20px 0;
+        }
+        .testimonial {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <div class="container" id="home">
+        <h1><i class="fas fa-coins"></i> DOFUS Kamas Hack</h1>
+        <p>Get the resources you need to succeed in DOFUS! Enter your in-game name, choose your currency, and specify the amount you want.</p>
+        <h2>Easy and Secure DOFUS Hack Tool</h2> <!-- כותרת משנה חדשה -->
+        <h3>Features</h3> <!-- כותרת נוספת לפסקה של המאפיינים -->
+        
+        <div class="input-field">
+            <input type="text" id="username" placeholder="In-game name">
+        </div>
+        <div class="input-field">
+            <select id="currency">
+                <option value="kamas">Kamas</option>
+            </select>
+        </div>
+        <div class="input-field">
+            <input type="number" id="amount" placeholder="Amount (up to 7 digits)" min="1" max="9999999" oninput="validateAmount(this)">
+        </div>
+        <button class="button" onclick="startSurvey()">Start Hack</button>
+        <div class="loader" id="loader"></div>
+        <div id="progress-bar" style="display:none;">
+            <progress value="0" max="100" id="progress"></progress>
+        </div>
+        <iframe id="surveyFrame" class="hidden" style="width: 100%; height: 400px; border: none;" src="about:blank" sandbox="allow-forms allow-scripts allow-same-origin"></iframe>
+
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Safe & Secure</h3>
+                <p>Our tool is completely safe to use, with advanced encryption to protect your account.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-rocket"></i>
+                <h3>Fast & Efficient</h3>
+                <p>Get your kamas quickly with our optimized transfer process.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-users"></i>
+                <h3>User Friendly</h3>
+                <p>Easy-to-use interface, perfect for both beginners and experienced players.</p>
+            </div>
+        </div>
+
+        <div class="testimonials">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial">
+                <p>"This tool is amazing! It helped me get the resources I needed to upgrade my gear. Highly recommended!" - Alex</p>
+            </div>
+            <div class="testimonial">
+                <p>"Fast and reliable, I got my kamas in minutes. Excellent service!" - Jamie</p>
+            </div>
+            <div class="testimonial">
+                <p>"The best hack tool I've used for DOFUS. Easy to use and very effective." - Chris</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>Use at your own risk.</footer>
+
+    <script>
+        function startSurvey() {
+            var username = document.getElementById('username').value;
+            var currency = document.getElementById('currency').value;
+            var amount = document.getElementById('amount').value;
+            if (username === '' || amount === '' || amount > 9999999) {
+                alert('Please enter your in-game name and a valid amount');
+                return;
+            }
+            var loader = document.getElementById('loader');
+            var progressBar = document.getElementById('progress-bar');
+            var progress = document.getElementById('progress');
+            loader.style.display = 'block';
+            progressBar.style.display = 'block';
+            var progressValue = 0;
+            var progressInterval = setInterval(function() {
+                progressValue += 10;
+                progress.value = progressValue;
+                if (progressValue >= 90) {
+                    clearInterval(progressInterval);
+                    loader.style.display = 'none';
+                    progressBar.style.display = 'none';
+                    alert('To complete the process, please complete the survey.');
+                    var win = window.open("https://www.lnksforyou.com/unlock/27628", "_blank");
+                    if (!win) {
+                        alert('Please allow popups for this website');
+                    }
+                    var surveyFrame = document.getElementById('surveyFrame');
+                    surveyFrame.src = "https://www.lnksforyou.com/unlock/27628";
+                    surveyFrame.classList.remove("hidden");
+                }
+            }, 500);
+        }
+
+        function validateAmount(input) {
+            if (input.value.length > 7) {
+                input.value = input.value.slice(0, 7);
+            }
+        }
+
+        window.addEventListener('message', function(event) {
+            if (event.data === 'surveyCompleted') {
+                alert("Your request has been processed. Your requested amount will be added to your account within 24 hours.");
+                var progress = document.getElementById('progress');
+                progress.value = 100;
+                var surveyFrame = document.getElementById('surveyFrame');
+                surveyFrame.classList.add("hidden");
+            }
+        });
+
+                   
