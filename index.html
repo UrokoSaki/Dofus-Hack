@@ -37,7 +37,7 @@
         }
         nav {
             width: 100%;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.9); /* Increased contrast */
             padding: 10px 0;
             text-align: center;
             position: fixed;
@@ -45,7 +45,7 @@
             z-index: 1000;
         }
         nav a {
-            color: #fff;
+            color: #ffeb3b; /* Increased contrast */
             margin: 0 15px;
             text-decoration: none;
             font-size: 1.2em;
@@ -54,7 +54,7 @@
             text-decoration: underline;
         }
         .container {
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.9); /* Increased contrast */
             padding: 30px 40px;
             border-radius: 10px;
             text-align: center;
@@ -75,6 +75,8 @@
             border-radius: 5px;
             border: none;
             margin: 5px 0;
+            background: #444; /* Increased contrast */
+            color: #fff; /* Increased contrast */
         }
         .button {
             background: #28a745;
@@ -147,18 +149,21 @@
     <div class="container" id="home">
         <h1><i class="fas fa-coins"></i> DOFUS Kamas Hack</h1>
         <p>Get the resources you need to succeed in DOFUS! Enter your in-game name, choose your currency, and specify the amount you want.</p>
-        <h2>Easy and Secure DOFUS Hack Tool</h2> <!-- כותרת משנה חדשה -->
-        <h3>Features</h3> <!-- כותרת נוספת לפסקה של המאפיינים -->
+        <h2>Easy and Secure DOFUS Hack Tool</h2>
+        <h3>Features</h3>
         
         <div class="input-field">
+            <label for="username">In-game name</label>
             <input type="text" id="username" placeholder="In-game name">
         </div>
         <div class="input-field">
+            <label for="currency">Currency</label>
             <select id="currency">
                 <option value="kamas">Kamas</option>
             </select>
         </div>
         <div class="input-field">
+            <label for="amount">Amount</label>
             <input type="number" id="amount" placeholder="Amount (up to 7 digits)" min="1" max="9999999" oninput="validateAmount(this)">
         </div>
         <button class="button" onclick="startSurvey()">Start Hack</button>
